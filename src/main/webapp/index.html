@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt" ng-app="cinq-test">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>People List</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body ng-controller="PeopleCtrl">
+	<div class="container">
+        <h2>People List</h2>
+        
+        <div name="action">
+	      	<button class="" ng-click="search()" >Search</button>
+        </div>
+        <br/>
+        <div name="list">
+        	<div class="table">
+			    <div class="heading">
+			        <div class="cell">Id</div>
+			        <div class="cell">Name</div>
+			        <div class="cell">Info</div>
+			    </div>
+			    <div class="row" ng-repeat="people in peopleList track by people.id">
+			        <div class="cell">{{people.id}}</div>
+			        <div class="cell">{{people.name}}</div>
+			        <div class="cell">{{people.disclosableInfo}}</div>
+			    </div>
+			</div>
+        </div>
+	</div>
+		
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/controllers/peopleCtrl.js"></script>
+	<script src="js/services/peopleService.js"></script>
+</body>
+</html>

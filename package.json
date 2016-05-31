@@ -1,0 +1,20 @@
+{
+  "name": "front-end-angularjs",
+  "version": "1.0.0",
+  "description": "Proposed exercise for candidates evaluation",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eduflores/front-end-angularjs.git"
+  },
+  "keywords": [
+    "angularjs"
+  ],
+  "author": "Eduardo Flores",
+  "license": "MIT",
+  "homepage": "https://github.com/eduflores/front-end-angularjs",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1"
+  }
+}
